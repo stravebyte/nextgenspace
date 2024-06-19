@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+header#logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    z-index: 10;
+    background: #000;
+}
+#intro{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+    margin-top: 40px;
+    transition: 500ms;
+    opacity: 0;
+}
+#intro h2{
+    font-weight: lighter;
+    font-size: 3em;
+    font-family: "Raleway", sans-serif;
+    transition: 400ms;
+    transform: translateY(-20px);
+
+}
+#intro h4{
+    font-size: .7em;
+    letter-spacing: 10px;
+    margin-left: 10px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #afafaf;
+    transition: 400ms;
+    transform: translateY(20px);
+}
+#img_box{
+    width: 100%;
+    height: 100%;
+}
+#img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page_1{
+    padding: 20px;
+}
+#page_1 #title{
+    line-height: 01;
+}
+#page_1 #title h2{
+    text-transform: uppercase;
+}
+#page_1 #title p{
+    font-style: italic;
+    color: #cecece;
+}
+#page_1 #images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+#page_1 #images #img_boxes{
+    padding: 4px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #303030;
+    transition: 200ms ease-in-out;
+}
+#page_1 #images #img_boxes img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#page_1 #images #img_boxes:hover{
+    scale: 1.09;
+}
+
+#page_1 #images #img_boxes:hover #text{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#page_1 #images #img_boxes #text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+    padding: 20px;
+    transform: translateY(25px);
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+#page_1 #images #img_boxes #text h2{
+    font-size: 1em;
+    color: #ff3275;
+}
+#page_1 #images #img_boxes #text p{
+    font-weight: 400;
+    color: #e4e4e4;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #474747;
+    padding: 10px;
+}
+footer b{
+    color: #ff3275;
+}
+footer a{
+    color: #ff3275;
+    transition: 500ms;
+}
+footer a:hover{
+    color: #fff;
+}
